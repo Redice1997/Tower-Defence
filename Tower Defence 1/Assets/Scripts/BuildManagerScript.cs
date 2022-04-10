@@ -6,7 +6,7 @@ public class BuildManagerScript : MonoBehaviour
 {
     public static BuildManagerScript instance;
     public GameObject standardTurretPrefab;
-    public GameObject anotherTurretPrefab;
+    public GameObject missileLauncherPrefab;
 
     private GameObject turretToBuild;
 

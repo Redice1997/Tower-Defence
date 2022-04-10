@@ -6804,7 +6804,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 3280700475922191149, guid: 3d271a505c2ee9d4fa90b1a3ad12a2fd,
     type: 3}
-  anotherTurretPrefab: {fileID: 0}
+  missileLauncherPrefab: {fileID: 2527386010662638325, guid: 4daa97ec5457a9e45a51e73fa5ba3572,
+    type: 3}
 --- !u!1001 &881649723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6887,6 +6888,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1916320093}
     m_Modifications:
+    - target: {fileID: 23965522142015890, guid: b525d72a0d5391f409b63274291df988,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4c26f67f9d0a1d4b9656374dd7b562b,
+        type: 3}
     - target: {fileID: 23965522142015891, guid: b525d72a0d5391f409b63274291df988,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6910,7 +6917,7 @@ PrefabInstance:
     - target: {fileID: 23965522142015891, guid: b525d72a0d5391f409b63274291df988,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: PurchaseMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 23965522142015891, guid: b525d72a0d5391f409b63274291df988,
         type: 3}
@@ -6960,12 +6967,12 @@ PrefabInstance:
     - target: {fileID: 23965522142015892, guid: b525d72a0d5391f409b63274291df988,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 23965522142015892, guid: b525d72a0d5391f409b63274291df988,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 23965522142015892, guid: b525d72a0d5391f409b63274291df988,
         type: 3}
@@ -7030,7 +7037,7 @@ PrefabInstance:
     - target: {fileID: 23965522142015893, guid: b525d72a0d5391f409b63274291df988,
         type: 3}
       propertyPath: m_Name
-      value: AnotherTurretItem
+      value: RocketTurretItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b525d72a0d5391f409b63274291df988, type: 3}
@@ -11080,6 +11087,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1400894761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1408806018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 23965522142015893, guid: b525d72a0d5391f409b63274291df988,
+    type: 3}
+  m_PrefabInstance: {fileID: 890095664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408806019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408806018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 50
+  m_PreferredHeight: 50
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1001 &1412930417
 PrefabInstance:
   m_ObjectHideFlags: 0
